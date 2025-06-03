@@ -4,11 +4,13 @@
 
 請將原始的 `C40_FF++` 資料夾解壓縮到與程式碼檔案相同層級。
 
-資料結構如下： (需先解壓縮, 若無解壓縮請執行Data_Unzip.ipynb)
+執行時資料結構如下： (需先解壓縮, 若無解壓縮請執行Data_Unzip.ipynb)
 
-clip_finetuned.pth
-Data_Unzip.ipynb
-AI偵測_作業.ipynb
+clip_finetuned.pth  //Pre-trained weights
+Data_Unzip.ipynb   
+AI偵測_作業.ipynb    //Source Code
+Results.csv  //Results (in csv version)
+Final_Prediction.txt  //Results (in text file version)
 C40_FF++/
 ├── Real_youtube/
 │ ├── <video_id1>/
