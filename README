@@ -6,6 +6,7 @@
 
 資料結構如下： (需先解壓縮, 若無解壓縮請執行Data_Unzip.ipynb)
 
+clip_finetuned.pth
 Data_Unzip.ipynb
 AI偵測_作業.ipynb
 C40_FF++/
