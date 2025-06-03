@@ -1,1 +1,39 @@
+# VLM-based Deepfake Detection on FF++ C40 (CLIP only)
 
+## 1. Dataset Setup
+
+請將原始的 `C40_FF++` 資料夾解壓縮到與程式碼檔案相同層級。
+
+資料結構如下： (需先解壓縮, 若無解壓縮請執行Data_Unzip.ipynb)
+
+Data_Unzip.ipynb
+AI偵測_作業.ipynb
+C40_FF++/
+├── Real_youtube/
+│ ├── <video_id1>/
+│ │ ├── list.txt
+│ │ ├── 000.png ~ 100.png
+│ └── ...
+├── FaceSwap/
+│ └── <video_id2>/ ...
+├── NeuralTextures/
+│ └── <video_id3>/ ...
+
+套件安裝:
+pip install torch>=2.0.0
+pip install transformers==4.38.2
+pip install peft
+pip install torchvision
+pip install matplotlib scikit-learn
+
+## 2. 執行訓練: (Jupyter Notebook)
+請執行 `AI偵測_作業.ipynb`，所有流程（資料特徵提取、推論與評估）皆已整合於 notebook 中。
+
+可使用以下指令開啟：(bash)
+jupyter notebook AI偵測_作業.ipynb
+
+## 3. 執行效果
+Expected Run Time: (with GPU)
+R7 7840hs + RTX 4050 (Laptop, 6GB vram) + 24GB ram --> Train 13min 16sec, Test 6min 51sec
+
+Test Accuracy: 0.776, 有附上Final_Prediction.txt. (text file中0為預測Real, 1為預測Fake)
