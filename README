@@ -6,7 +6,7 @@
 
 執行時資料結構如下： (需先解壓縮, 若無解壓縮請執行Data_Unzip.ipynb)
 
-clip_finetuned.pth  //Pre-trained weights
+clip_finetuned.pth  //Pre-trained weights (https://drive.google.com/file/d/1cfA4psevSNyl9OaleIj0S_kEbk2cyNOK/view?usp=sharing)
 Data_Unzip.ipynb   
 AI偵測_作業.ipynb    //Source Code
 Results.csv  //Results (in csv version)
