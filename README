@@ -3,7 +3,6 @@
 ## 1. Dataset Setup
 
 請將原始的 `C40_FF++` 資料夾解壓縮到與程式碼檔案相同層級。
-
 執行時資料結構如下： (需先解壓縮, 若無解壓縮請執行Data_Unzip.ipynb)
 
 clip_finetuned.pth  //Pre-trained weights (https://drive.google.com/file/d/1kQKYdMU9E8-AF99mi83mrvp8XpsrUxFa/view?usp=sharing)
@@ -22,8 +21,8 @@ C40_FF++/
 │ └── <video_id3>/ ...
 
 套件安裝:
-pip install torch>=2.6.1+cu128
-pip install transformers==4.38.2
+pip install torch>=2.7.1+cu128
+pip install transformers
 pip install peft
 pip install torchvision
 pip install matplotlib scikit-learn
@@ -36,5 +35,5 @@ jupyter notebook AI偵測_作業.ipynb
 
 ## 3. 執行效果
 Expected Run Time: (with GPU)
-R7 7840hs + RTX 4050 (Laptop, 6GB vram) + 24GB ram --> Train 13min 16sec, Test 6min 51sec
+R7 7840hs + RTX 4050 (Laptop, 6GB vram) + 24GB ram --> Train 12min 54sec, Test 6min 26sec
 Test Accuracy: 0.776, 有附上Final_Prediction.txt. (text file中0為預測Real, 1為預測Fake)
